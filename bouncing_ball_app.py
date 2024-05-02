@@ -8,6 +8,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-
+#only run app if main file (bouncing_ball_app) is executed 
 if __name__ == "__main__":
+    #run in debug mode to observe changes without having to restart connection
     app.run(debug=True)
